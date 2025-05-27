@@ -26,12 +26,7 @@
 </head>
 
 <body>
-  <!-- Preloader start -->
-  <!-- <div class="fullpage_loader">
-    <span class="loader">
-    </span>
-  </div> -->
-  <!-- Preloader end -->
+ 
 
 
 
@@ -50,14 +45,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">
+              <a class="nav-link " aria-current="page" href="index.html">
                 Home
               </a>
             
             
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html"> About Us </a>
+              <a class="nav-link active" href="about.html"> About Us </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="services.html">
@@ -72,12 +67,7 @@
           <div class="header-action d-flex justify-content-end align-items-center">
             <ul class="list-unstyled d-none d-xxl-flex gap-3">
             
-              <li>
-                <button
-                  class="header-search-btn rounded-pill bg-three border-0 d-flex align-items-center justify-content-center">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-              </li>
+             
               <li>
                 <button
                   class="offcanvas-btn rounded-pill bg-three border-0 d-flex align-items-center justify-content-center">
@@ -91,8 +81,7 @@
             <!-- shipment tracking modal start -->
 <!-- Track your Shipment Button -->
 <a href="#" 
-   id="track-shipment-btn"
-   class="theme-btn style2 d-inline-flex align-items-center gap-2 justify-content-center rounded-pill hover-effect-btn">
+   class="theme-btn header-search-btn style2 d-inline-flex align-items-center gap-2 justify-content-center rounded-pill hover-effect-btn">
   Track your Shipment
   <span class="theme-btn-icon">
     <!-- SVG icon, unchanged -->
@@ -104,21 +93,7 @@
   </span>
 </a>
 
-<!-- Modal Markup -->
-<div class="modal-backdrop" id="track-modal-backdrop"></div>
-<div class="track-modal" id="track-modal" tabindex="-1">
-  <div class="track-modal-content">
-    <button class="close-modal" id="close-modal" aria-label="Close">&times;</button>
-    <h5 class="modal-title">Track Your Shipment</h5>
-    <form id="track-form" autocomplete="off">
-      <div class="mb-3">
-        <label for="tracking-number" class="form-label">Enter Tracking Number:</label>
-        <input type="text" id="tracking-number" class="form-control rounded-pill" required autofocus>
-      </div>
-      <button type="submit" class="theme-btn style2 rounded-pill w-100">Track</button>
-    </form>
-  </div>
-</div>
+
             <!-- shipment tracking modal ends  -->
           </div>
         </div>
@@ -129,18 +104,22 @@
       <button type="button"
         class="icon-box close-header-search border-0 position-absolute secondary-bg d-flex align-items-center justify-content-center rounded-pill"><i
           class="fa-regular fa-xmark"></i></button>
+
+          <!-- shipment tracking  -->
       <div class="container h-100 d-flex align-items-center justify-content-center">
         <div class="search-main mx-auto">
           <form action="#">
             <div class="input-group position-relative">
-              <input type="text" class="form-control shadow-none rounded-pill" placeholder="Search here..">
+              <input type="text" class="form-control shadow-none rounded-pill" placeholder="Insert Your Tracking ID">
               <button
                 class="search-btn theme-btn position-absolute top-50 translate-middle-y secondary-bg rounded-pill d-flex align-items-center gap-2"
-                type="submit"> <i class="fa-solid fa-magnifying-glass ms-0"></i> Search</button>
+                type="submit"> <i class="fa-solid fa-magnifying-glass ms-0"></i> Start Tracking</button>
             </div>
           </form>
         </div>
       </div>
+          <!-- shipment tracking ends -->
+
     </div>
     <!-- header search part end -->
     <!-- offcanvas menu part start -->
@@ -173,7 +152,7 @@
             <div class="info">
               <h5 class="info-label text-white mb-2">
                 Call Now</h5>
-              <a href="tel:07015755785" class="info-text">07015755785</a>
+              <a href="tel:07084645549" class="info-text">07084645549</a>
             </div>
           </li>
           <li class="d-flex align-items-center gap-3">
@@ -193,7 +172,7 @@
             </div>
             <div class="info">
               <h5 class="info-label text-white mb-2">Location</h5>
-              <a href="#" class="info-text">281 Oron Road, Uyo, Nigeria</a>
+              <a href="#" class="info-text">2nd floor Quenthall Pharmacy No. 253 Oron Road Uyo, Akwa Ibom State, Nigeria</a>
             </div>
           </li>
         </ul>
@@ -218,13 +197,13 @@
       <div class="container">
         <div class="mobile-topbar">
           <div class="d-flex justify-content-between align-items-center">
-            <div class="">
+           
               <a href="index.html">
                                    <img src="assets/img/logo/logo.jpg" width="100" alt="logo">
 
 
               </a>
-            </div>
+        
             <div class="bars">
               <i class="fas fa-bars"></i>
             </div>
@@ -233,13 +212,9 @@
       </div>
       <div class="mobile-menu-overlay"></div>
       <div class="mobile-menu-main">
-        <div class="logo">
-          <a href="index.html">
-            <svg class="shape" xmlns="http://www.w3.org/2000/svg" width="359" height="160" viewBox="0 0 359 160"
-              fill="none">
-              <path d="M0 0H359L315 60V160H227.056H0V0Z" fill="currentColor" />
-            </svg>
-                             <img src="assets/img/logo/logo.jpg" width="100" alt="logo">
+        <div class="logo mt-3 f-bold">
+          <a href="index.html" class="fw-bold">
+                           Boren Imports
 
 
           </a>
@@ -276,7 +251,7 @@
               <div class="info">
                 <h5 class="info-label mb-2">
                   Call Now</h5>
-                <a href="tel:07015755785" class="info-text">07015755785</a>
+                <a href="tel:07084645549" class="info-text">07084645549</a>
               </div>
             </li>
             <li class="d-flex align-items-center gap-3">
@@ -294,7 +269,7 @@
               </div>
               <div class="info">
                 <h5 class="info-label mb-2">Location</h5>
-                <a href="#" class="info-text">281 Oron road, Uyo, Nigeria.</a>
+                <a href="#" class="info-text">2nd floor Quenthall Pharmacy No. 253 Oron Road Uyo, Akwa Ibom State, Nigeria</a>
               </div>
             </li>
           </ul>
@@ -395,7 +370,7 @@
             <div class="icon">
             </div>
             <div class="text">
-              <span class="heading-two d-flex align-items-center"><span class="odometer" data-count="60"></span>k</span>
+              <span class="heading-two d-flex align-items-center"><span class="odometer" data-count="4"></span>k</span>
               <p>Sucessful Transportation</p>
             </div>
           </div>
@@ -404,16 +379,7 @@
             <div class="icon">
             </div>
             <div class="text">
-              <span class="heading-two d-flex align-items-center"><span class="odometer" data-count="50"></span></span>
-              <p>Experienced Team Member</p>
-            </div>
-          </div>
-          <div
-            class="counter-item d-flex gap-3 justify-content-xxl-center justify-content-start align-items-start position-relative">
-            <div class="icon">
-            </div>
-            <div class="text">
-              <span class="heading-two d-flex align-items-center"><span class="odometer" data-count="45"></span>+</span>
+              <span class="heading-two d-flex align-items-center"><span class="odometer" data-count="7"></span>+</span>
               <p>Years of Experience</p>
             </div>
           </div>
@@ -422,7 +388,7 @@
             <div class="icon">
             </div>
             <div class="text">
-              <span class="heading-two d-flex align-items-center"><span class="odometer" data-count="58"></span>k</span>
+              <span class="heading-two d-flex align-items-center"><span class="odometer" data-count="9"></span>k</span>
               <p>Staisfied Customers</p>
             </div>
           </div>
@@ -440,98 +406,8 @@
       </div>
       <div class="container">
         <div class="row g-4">
-          <div class="col-lg-6">
-            <div class="Boren Import-contact-form rounded-20">
-              <form action="#">
-                <div class="row g-4">
-                  <div class="col-lg-12">
-                    <div class="input-group black">
-                      <input type="text" class="form-control about_form shadow-none rounded-pill" placeholder="Your Name">
-                      <span class="icon position-absolute top-50 translate-middle-y"><i
-                          class="fa-solid fa-user"></i></span>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="input-group">
-                      <input type="email" class="form-control about_form shadow-none rounded-pill" placeholder="Your Email">
-                      <span class="icon position-absolute top-50 translate-middle-y"><i
-                          class="fa-solid fa-envelope"></i></span>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="input-group">
-                      <input type="text" class="form-control about_form shadow-none rounded-pill" placeholder="Phone No:">
-                      <span class="icon position-absolute top-50 translate-middle-y"><i
-                          class="fa-solid fa-phone"></i></span>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="input-group">
-                      <select class="form-select about-form white shadow-none rounded-pill">
-                        <option value="" selected disabled>Freight Type</option>
-                        <option value="general">General Cargo</option>
-                        <option value="refrigerated">Refrigerated Goods</option>
-                        <option value="hazardous">Hazardous Materials</option>
-                        <option value="liquid">Liquid Transport</option>
-                        <option value="bulk">Bulk Freight</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="input-group">
-                      <select class="form-select white shadow-none rounded-pill">
-                        <option value="" selected disabled>Load</option>
-                        <option value="full">Full Truckload (FTL)</option>
-                        <option value="partial">Partial Truckload (PTL)</option>
-                        <option value="ltl">Less Than Truckload (LTL)</option>
-                        <option value="container">Container Load</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="input-group">
-                      <label class="form-label text-white">Distance (Miles)</label>
-                      <div class="slider-wrapper">
-                        <output id="slider-value" class="slider-tooltip"></output>
-                        <input id="slider-range" class="slider" max="10000" min="100" type="range" value="8000">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="total-price pt-3 d-flex align-items-center justify-content-between gap-4">
-                      <div class="switch-toggle">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider"></span>
-                        </label>
-                      </div>
-                      <div class="price">
-                        <p class="about_boren"><span >Total:</span >$7000.00</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <button type="submit"
-                      class="theme-btn hover-effect-btn style2 text-uppercase w-100 border-0 rounded-pill d-flex align-items-center gap-2 text-center justify-content-center">
-                      Submit Request
-                      <span class="theme-btn-icon">
-                        <svg class="su-arrow-svg-top-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                            fill="white"></path>
-                          <path
-                            d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                            fill="white"></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-6">
+        
+          <div class="col-lg-12">
             <div class="section-title text-start pb-30">
               <h6 class="subtitle d-inline-flex text-white align-items-center">Why Choose us
                 <span class="icon">
@@ -1091,7 +967,7 @@ Uyo, Akwa Ibom State, Nigeria
             <div class="col-md-6 align-self-center">
               <div class="footer-copyright text-center text-lg-start">
                 <p>
-                  Copyright © 2024 <span>Boren Import.</span> All Rights Reserved
+                  Copyright © 2025 <span>Boren Import.</span> All Rights Reserved
                 </p>
               </div>
             </div>

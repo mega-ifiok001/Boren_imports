@@ -30,7 +30,7 @@
  
 
 
-  <!-- Header section start -->
+   <!-- Header section start -->
   <header class="ep-header-section style2" id="sticky-header">
     <nav class="navbar p-0 navbar-expand-xl d-none d-xl-flex">
       <div class="container-fluid">
@@ -45,14 +45,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">
+              <a class="nav-link active " aria-current="page" href="index.html">
                 Home
               </a>
             
             
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html"> About Us </a>
+              <a class="nav-link " href="about.html"> About Us </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="services.html">
@@ -69,12 +69,6 @@
             
               <li>
                 <button
-                  class="header-search-btn rounded-pill bg-three border-0 d-flex align-items-center justify-content-center">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-              </li>
-              <li>
-                <button
                   class="offcanvas-btn rounded-pill bg-three border-0 d-flex align-items-center justify-content-center">
                   <i class="fa-solid fa-bars"></i>
                 </button>
@@ -86,8 +80,7 @@
             <!-- shipment tracking modal start -->
 <!-- Track your Shipment Button -->
 <a href="#" 
-   id="track-shipment-btn"
-   class="theme-btn style2 d-inline-flex align-items-center gap-2 justify-content-center rounded-pill hover-effect-btn">
+   class="theme-btn style2 header-search-btn d-inline-flex align-items-center gap-2 justify-content-center rounded-pill hover-effect-btn">
   Track your Shipment
   <span class="theme-btn-icon">
     <!-- SVG icon, unchanged -->
@@ -99,21 +92,7 @@
   </span>
 </a>
 
-<!-- Modal Markup -->
-<div class="modal-backdrop" id="track-modal-backdrop"></div>
-<div class="track-modal" id="track-modal" tabindex="-1">
-  <div class="track-modal-content">
-    <button class="close-modal" id="close-modal" aria-label="Close">&times;</button>
-    <h5 class="modal-title">Track Your Shipment</h5>
-    <form id="track-form" autocomplete="off">
-      <div class="mb-3">
-        <label for="tracking-number" class="form-label">Enter Tracking Number:</label>
-        <input type="text" id="tracking-number" class="form-control rounded-pill" required autofocus>
-      </div>
-      <button type="submit" class="theme-btn style2 rounded-pill w-100">Track</button>
-    </form>
-  </div>
-</div>
+
             <!-- shipment tracking modal ends  -->
           </div>
         </div>
@@ -124,22 +103,29 @@
       <button type="button"
         class="icon-box close-header-search border-0 position-absolute secondary-bg d-flex align-items-center justify-content-center rounded-pill"><i
           class="fa-regular fa-xmark"></i></button>
+
+          <!-- shipment tracker -->
       <div class="container h-100 d-flex align-items-center justify-content-center">
         <div class="search-main mx-auto">
+
           <form action="#">
             <div class="input-group position-relative">
-              <input type="text" class="form-control shadow-none rounded-pill" placeholder="Search here..">
+              <input type="text" class="form-control shadow-none rounded-pill" placeholder="Insert Your Tracking ID">
               <button
                 class="search-btn theme-btn position-absolute top-50 translate-middle-y secondary-bg rounded-pill d-flex align-items-center gap-2"
-                type="submit"> <i class="fa-solid fa-magnifying-glass ms-0"></i> Search</button>
+                type="submit"> <i class="fa-solid fa-magnifying-glass ms-0"></i> Start Tracking </button>
             </div>
           </form>
         </div>
       </div>
+
+      <!-- shipment tracker ends -->
     </div>
     <!-- header search part end -->
-    <!-- offcanvas menu part start -->
-    <div class="offcanvas-overlay position-fixed top-0 start-0 w-100 h-100"></div>
+      <!-- offcanvas menu part start -->
+    <div class="offcanvas-overlay position-fixed top-0 start-0 w-100 h-100">
+      <i class="fa fa-bars"></i>
+    </div>
     <aside class="offcanvas-menu position-fixed top-0 h-100 w-100">
       <div class="header-info d-flex align-items-center justify-content-between gap-4">
         <div class="logo">
@@ -168,7 +154,7 @@
             <div class="info">
               <h5 class="info-label text-white mb-2">
                 Call Now</h5>
-              <a href="tel:07015755785" class="info-text">07015755785</a>
+              <a href="tel:07084645549" class="info-text">07084645549</a>
             </div>
           </li>
           <li class="d-flex align-items-center gap-3">
@@ -188,24 +174,25 @@
             </div>
             <div class="info">
               <h5 class="info-label text-white mb-2">Location</h5>
-              <a href="#" class="info-text">281 Oron Road, Uyo, Nigeria</a>
+              <a href="#" class="info-text">2nd floor Quenthall Pharmacy No. 253 Oron Road Uyo, Akwa Ibom State, Nigeria</a>
             </div>
           </li>
         </ul>
       </div>
-      <div class="social-icon pt-30">
-        <h4 class="social-title heading-four text-white">Social Info</h4>
-        <ul class="list-unstyled d-flex align-items-center flex-wrap gap-2">
-          <li><a class="icon-box secondary-bg d-flex align-items-center justify-content-center rounded-pill"
-              target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a class="icon-box secondary-bg d-flex align-items-center justify-content-center rounded-pill"
-              target="_blank" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a class="icon-box secondary-bg d-flex align-items-center justify-content-center rounded-pill"
-              target="_blank" href="#"><i class="fab fa-whatsapp"></i></a></li>
-          <li><a class="icon-box secondary-bg d-flex align-items-center justify-content-center rounded-pill"
-              target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-      </div>
+      <div class="footer-social pt-30">
+                <ul class="list-unstyled d-flex justify-content-center justify-content-md-end flex-wrap gap-2">
+                  <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
+                      href="https://r.search.yahoo.com/_ylt=AwrEqFuIgTVoCAIA5q9XNyoA;_ylu=Y29sbwNiZjEEcG9zAzQEdnRpZAMEc2VjA3Ny/RV=2/RE=1749546632/RO=10/RU=https%3a%2f%2fwww.facebook.com%2fborenimports%2f/RK=2/RS=nD8Ihgr7HfV3H9eXucCa0FXjw.0-"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
+                      href="https://r.search.yahoo.com/_ylt=AwrEqFuIgTVoCAIA6K9XNyoA;_ylu=Y29sbwNiZjEEcG9zAzYEdnRpZAMEc2VjA3Ny/RV=2/RE=1749546632/RO=10/RU=https%3a%2f%2fwww.tiktok.com%2f%40boren_imports/RK=2/RS=pbKwFCSjrCKXruLuAGJMo6MIwyc-"><i class="fa-brands fa-tiktok"></i></a></li>
+                  <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
+                      href="#"><i class="fab fab fa-whatsapp"></i></a></li>
+                  <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
+                      href="https://r.search.yahoo.com/_ylt=AwrEqFuIgTVoCAIA5a9XNyoA;_ylu=Y29sbwNiZjEEcG9zAzMEdnRpZAMEc2VjA3Ny/RV=2/RE=1749546632/RO=10/RU=https%3a%2f%2fwww.instagram.com%2fborenimports%2f/RK=2/RS=_wFpOgy_egWei_qQGlMyGC0quJI-"><i class="fab fab fa-instagram"></i></a></li>
+                        <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
+                      href="https://r.search.yahoo.com/_ylt=AwrEqFuIgTVoCAIA5K9XNyoA;_ylu=Y29sbwNiZjEEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1749546632/RO=10/RU=https%3a%2f%2fwww.linkedin.com%2fcompany%2fboren-imports-int-l-ltd/RK=2/RS=Gcu44f0fiv8PjffqAzSlcw5ziW0-"><i class="fab fab fa-linkedin"></i></a></li>
+                </ul>
+              </div>
     </aside>
     <!-- offcanvas menu part end -->
     <!-- mobile navbar part start -->
@@ -213,13 +200,13 @@
       <div class="container">
         <div class="mobile-topbar">
           <div class="d-flex justify-content-between align-items-center">
-            <div class="">
+           
               <a href="index.html">
                                    <img src="assets/img/logo/logo.jpg" width="100" alt="logo">
 
 
               </a>
-            </div>
+        
             <div class="bars">
               <i class="fas fa-bars"></i>
             </div>
@@ -228,13 +215,9 @@
       </div>
       <div class="mobile-menu-overlay"></div>
       <div class="mobile-menu-main">
-        <div class="logo">
-          <a href="index.html">
-            <svg class="shape" xmlns="http://www.w3.org/2000/svg" width="359" height="160" viewBox="0 0 359 160"
-              fill="none">
-              <path d="M0 0H359L315 60V160H227.056H0V0Z" fill="currentColor" />
-            </svg>
-                             <img src="assets/img/logo/logo.jpg" width="100" alt="logo">
+        <div class="logo mt-3 f-bold">
+          <a href="index.html" class="fw-bold">
+                           Boren Imports
 
 
           </a>
@@ -271,7 +254,7 @@
               <div class="info">
                 <h5 class="info-label mb-2">
                   Call Now</h5>
-                <a href="tel:07015755785" class="info-text">07015755785</a>
+                <a href="tel:07084645549" class="info-text">07084645549</a>
               </div>
             </li>
             <li class="d-flex align-items-center gap-3">
@@ -289,7 +272,7 @@
               </div>
               <div class="info">
                 <h5 class="info-label mb-2">Location</h5>
-                <a href="#" class="info-text">281 Oron road, Uyo, Nigeria.</a>
+                <a href="#" class="info-text">2nd floor Quenthall Pharmacy No. 253 Oron Road Uyo, Akwa Ibom State, Nigeria</a>
               </div>
             </li>
           </ul>
@@ -532,8 +515,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xxl-4 col-xl-5 col-lg-8 mx-auto">
-                 <div class="Boren Import-contact-form rounded-20 me-0 banner-image form-toggle-anim" id="form-toggle-anim">
+                  <div class="col-xxl-4 col-xl-5 col-lg-8 mx-auto">
+<div class="Boren Import-contact-form rounded-20 me-0 banner-image form-toggle-anim" id="form-toggle-anim">
   <!-- Sign Up Form Starts -->
   <form action="#" id="signup-form" class="form-toggle-form active" autocomplete="off">
     <div class="row g-4">
@@ -677,7 +660,7 @@
   </form>
   <!-- Sign In Form Ends -->
 </div>
-                </div>
+</div>
               </div>
             </div>
             <div class="swiper-slide">
@@ -720,8 +703,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xxl-4 col-xl-5 col-lg-8 mx-auto">
-                  <div class="Boren Import-contact-form rounded-20 me-0 banner-image form-toggle-anim" id="form-toggle-anim">
+                  <div class="col-xxl-4 col-xl-5 col-lg-8 mx-auto">
+<div class="Boren Import-contact-form rounded-20 me-0 banner-image form-toggle-anim" id="form-toggle-anim">
   <!-- Sign Up Form Starts -->
   <form action="#" id="signup-form" class="form-toggle-form active" autocomplete="off">
     <div class="row g-4">
@@ -865,7 +848,7 @@
   </form>
   <!-- Sign In Form Ends -->
 </div>
-                </div>
+</div>
               </div>
             </div>
           </div>
@@ -1696,7 +1679,7 @@ Uyo, Akwa Ibom State, Nigeria
             <div class="col-md-6 align-self-center">
               <div class="footer-copyright text-center text-lg-start">
                 <p>
-                  Copyright © 2024 <span>Boren Import.</span> All Rights Reserved
+                  Copyright © 2025 <span>Boren Import.</span> All Rights Reserved
                 </p>
               </div>
             </div>

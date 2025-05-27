@@ -64,12 +64,7 @@
           <div class="header-action d-flex justify-content-end align-items-center">
             <ul class="list-unstyled d-none d-xxl-flex gap-3">
             
-              <li>
-                <button
-                  class="header-search-btn rounded-pill bg-three border-0 d-flex align-items-center justify-content-center">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-              </li>
+         
               <li>
                 <button
                   class="offcanvas-btn rounded-pill bg-three border-0 d-flex align-items-center justify-content-center">
@@ -83,8 +78,7 @@
             <!-- shipment tracking modal start -->
 <!-- Track your Shipment Button -->
 <a href="#" 
-   id="track-shipment-btn"
-   class="theme-btn style2 d-inline-flex align-items-center gap-2 justify-content-center rounded-pill hover-effect-btn">
+   class="theme-btn header-search-btn style2 d-inline-flex align-items-center gap-2 justify-content-center rounded-pill hover-effect-btn">
   Track your Shipment
   <span class="theme-btn-icon">
     <!-- SVG icon, unchanged -->
@@ -96,21 +90,7 @@
   </span>
 </a>
 
-<!-- Modal Markup -->
-<div class="modal-backdrop" id="track-modal-backdrop"></div>
-<div class="track-modal" id="track-modal" tabindex="-1">
-  <div class="track-modal-content">
-    <button class="close-modal" id="close-modal" aria-label="Close">&times;</button>
-    <h5 class="modal-title">Track Your Shipment</h5>
-    <form id="track-form" autocomplete="off">
-      <div class="mb-3">
-        <label for="tracking-number" class="form-label">Enter Tracking Number:</label>
-        <input type="text" id="tracking-number" class="form-control rounded-pill" required autofocus>
-      </div>
-      <button type="submit" class="theme-btn style2 rounded-pill w-100">Track</button>
-    </form>
-  </div>
-</div>
+
             <!-- shipment tracking modal ends  -->
           </div>
         </div>
@@ -125,10 +105,10 @@
         <div class="search-main mx-auto">
           <form action="#">
             <div class="input-group position-relative">
-              <input type="text" class="form-control shadow-none rounded-pill" placeholder="Search here..">
+              <input type="text" class="form-control shadow-none rounded-pill" placeholder="Insert Your Tracking ID">
               <button
                 class="search-btn theme-btn position-absolute top-50 translate-middle-y secondary-bg rounded-pill d-flex align-items-center gap-2"
-                type="submit"> <i class="fa-solid fa-magnifying-glass ms-0"></i> Search</button>
+                type="submit"> <i class="fa-solid fa-magnifying-glass ms-0"></i> Start Tracking</button>
             </div>
           </form>
         </div>

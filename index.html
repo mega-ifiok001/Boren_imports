@@ -39,8 +39,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand p-0" href="index.html">
-          <h1 class="text-white">Boren Import</h1>
-          <!-- <img src="assets/img/logo/logo3.svg" alt="logo"> -->
+          <!-- <img src="assets/img/logo/logo.jpg" width="100" alt="logo"> -->
+           <h2  class="text-white"      >Boren Imports</h2>
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-lg-0">
@@ -80,21 +80,41 @@
                 </button>
               </li>
             </ul>
-            <a href="contact.html"
-              class="theme-btn style2 d-inline-flex align-items-center gap-2 justify-content-center rounded-pill hover-effect-btn">
-              Track your Shipment
-              <span class="theme-btn-icon">
-                <svg class="su-arrow-svg-top-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                    fill="white"></path>
-                  <path
-                    d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                    fill="white"></path>
-                </svg>
-              </span>
-            </a>
+        
+
+
+            <!-- shipment tracking modal start -->
+<!-- Track your Shipment Button -->
+<a href="#" 
+   id="track-shipment-btn"
+   class="theme-btn style2 d-inline-flex align-items-center gap-2 justify-content-center rounded-pill hover-effect-btn">
+  Track your Shipment
+  <span class="theme-btn-icon">
+    <!-- SVG icon, unchanged -->
+    <svg class="su-arrow-svg-top-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 1V8C10 8.29167 ... (SVG omitted for brevity)" fill="white"></path>
+      <path d="M10 1V8C10 8.29167 ... (SVG omitted for brevity)" fill="white"></path>
+    </svg>
+  </span>
+</a>
+
+<!-- Modal Markup -->
+<div class="modal-backdrop" id="track-modal-backdrop"></div>
+<div class="track-modal" id="track-modal" tabindex="-1">
+  <div class="track-modal-content">
+    <button class="close-modal" id="close-modal" aria-label="Close">&times;</button>
+    <h5 class="modal-title">Track Your Shipment</h5>
+    <form id="track-form" autocomplete="off">
+      <div class="mb-3">
+        <label for="tracking-number" class="form-label">Enter Tracking Number:</label>
+        <input type="text" id="tracking-number" class="form-control rounded-pill" required autofocus>
+      </div>
+      <button type="submit" class="theme-btn style2 rounded-pill w-100">Track</button>
+    </form>
+  </div>
+</div>
+            <!-- shipment tracking modal ends  -->
           </div>
         </div>
       </div>
@@ -124,7 +144,9 @@
       <div class="header-info d-flex align-items-center justify-content-between gap-4">
         <div class="logo">
           <a href="index.html">
-           Boren imports
+                   <img src="assets/img/logo/logo.jpg" width="100" alt="logo">
+
+           
           </a>
         </div>
         <button class="offcasvas-close bg-transparent border-0 text-white">
@@ -193,10 +215,9 @@
           <div class="d-flex justify-content-between align-items-center">
             <div class="">
               <a href="index.html">
-                  <a href="boren">
-                    Boren Imports
-                  </a>
-                <!-- <img src="assets/img/logo/Logo.svg" alt="logo" width="160"> -->
+                                   <img src="assets/img/logo/logo.jpg" width="100" alt="logo">
+
+
               </a>
             </div>
             <div class="bars">
@@ -213,7 +234,9 @@
               fill="none">
               <path d="M0 0H359L315 60V160H227.056H0V0Z" fill="currentColor" />
             </svg>
-           <h1>boren import</h1>
+                             <img src="assets/img/logo/logo.jpg" width="100" alt="logo">
+
+
           </a>
         </div>
         <div class="close-mobile-menu"><i class="fas fa-times"></i></div>
@@ -318,116 +341,157 @@
                           </svg>
                         </span>
                       </a>
-                      <a href="about.html"
-                        class="theme-btn banner-btn theme-btn-border style2 d-inline-flex text-uppercase align-items-center gap-2 justify-content-center rounded-pill hover-effect-btn">
-                       Track Your Shipment
-                        <span class="theme-btn-icon">
-                          <svg class="su-arrow-svg-top-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                              fill="white"></path>
-                            <path
-                              d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                              fill="white"></path>
-                          </svg>
-                        </span>
-                      </a>
+                  
                     </div>
                   </div>
                 </div>
                 <div class="col-xxl-4 col-xl-5 col-lg-8 mx-auto">
-                  <div class="Boren Import-contact-form rounded-20 me-0 banner-image">
-                    <form action="#">
-                      <div class="row g-4">
-                        <div class="col-lg-12">
-                          <div class="input-group black">
-                            <input type="text" class="form-control shadow-none rounded-pill" placeholder="Your Name" >
-                            <span class="icon position-absolute top-50 translate-middle-y"><i
-                                class="fa-solid fa-user"></i></span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="input-group">
-                            <input type="email" class="form-control shadow-none rounded-pill"
-                              placeholder="Your Email" >
-                            <span class="icon position-absolute top-50 translate-middle-y"><i
-                                class="fa-solid fa-envelope"></i></span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="input-group">
-                            <input type="text" class="form-control shadow-none rounded-pill" placeholder="Phone No:" >
-                            <span class="icon position-absolute top-50 translate-middle-y"><i
-                                class="fa-solid fa-phone"></i></span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="input-group">
-                            <select class="form-select white shadow-none rounded-pill">
-                              <option value="" selected disabled>Freight Type</option>
-                              <option value="general">General Cargo</option>
-                              <option value="refrigerated">Refrigerated Goods</option>
-                              <option value="hazardous">Hazardous Materials</option>
-                              <option value="liquid">Liquid Transport</option>
-                              <option value="bulk">Bulk Freight</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="input-group">
-                            <select class="form-select white shadow-none rounded-pill">
-                              <option value="" selected disabled>Load</option>
-                              <option value="full">Full Truckload (FTL)</option>
-                              <option value="partial">Partial Truckload (PTL)</option>
-                              <option value="ltl">Less Than Truckload (LTL)</option>
-                              <option value="container">Container Load</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="input-group">
-                            <label class="form-label text-white">Distance (Miles)</label>
-                            <div class="slider-wrapper">
-                              <output class="slider-tooltip"></output>
-                              <input class="slider" max="10000" min="100" type="range" value="8000">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="total-price pt-3 d-flex align-items-center justify-content-between gap-4">
-                            <div class="switch-toggle">
-                              <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                              </label>
-                            </div>
-                            <div class="price">
-                              <p><span class="text-white">Tottal:</span>$7000.00</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-12">
-                          <button type="submit"
-                            class="theme-btn hover-effect-btn style2 text-uppercase w-100 border-0 rounded-pill d-flex align-items-center gap-2 text-center justify-content-center">
-                            Submit Request
-                            <span class="theme-btn-icon">
-                              <svg class="su-arrow-svg-top-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                                  fill="white"></path>
-                                <path
-                                  d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                                  fill="white"></path>
-                              </svg>
-                            </span>
-                          </button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+<div class="Boren Import-contact-form rounded-20 me-0 banner-image form-toggle-anim" id="form-toggle-anim">
+  <!-- Sign Up Form Starts -->
+  <form action="#" id="signup-form" class="form-toggle-form active" autocomplete="off">
+    <div class="row g-4">
+      <!-- Full Name -->
+      <div class="col-lg-12">
+        <div class="input-group black">
+          <input type="text" class="form-control shadow-none rounded-pill" placeholder="Full Name" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-user"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Email -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="email" class="form-control shadow-none rounded-pill" placeholder="Email Address" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Phone Number -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="tel" class="form-control shadow-none rounded-pill" placeholder="Phone Number" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-phone"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Company Name (Optional) -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control shadow-none rounded-pill" placeholder="Company Name (Optional)">
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-building"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Address -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control shadow-none rounded-pill" placeholder="Shipping Address" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-location-dot"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Password -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="password" class="form-control shadow-none rounded-pill" placeholder="Password" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Confirm Password -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="password" class="form-control shadow-none rounded-pill" placeholder="Confirm Password" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Submit Button -->
+      <div class="col-lg-12">
+        <button type="submit"
+          class="theme-btn hover-effect-btn style2 text-uppercase w-100 border-0 rounded-pill d-flex align-items-center gap-2 text-center justify-content-center">
+          Sign Up
+          <span class="theme-btn-icon"></span>
+        </button>
+      </div>
+      <!-- Sign In Link -->
+      <div class="col-lg-12 text-center">
+        <p class="mt-3 text-white">
+          Already have an account?
+          <a href="#" id="show-signin" class="text-decoration-underline text-warning">Sign in here</a>
+        </p>
+      </div>
+    </div>
+  </form>
+  <!-- Sign Up Form Ends -->
+
+  <!-- Sign In Form Starts -->
+  <form action="#" id="signin-form" class="form-toggle-form" autocomplete="off">
+    <div class="row g-4">
+      <!-- Full Name -->
+      <div class="col-lg-12">
+        <div class="input-group black">
+          <input type="text" class="form-control shadow-none rounded-pill" placeholder="Full Name" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-user"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Email -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="email" class="form-control shadow-none rounded-pill" placeholder="Email Address" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Phone Number -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="tel" class="form-control shadow-none rounded-pill" placeholder="Phone Number" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-phone"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Password -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="password" class="form-control shadow-none rounded-pill" placeholder="Password" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Submit Button -->
+      <div class="col-lg-12">
+        <button type="submit"
+          class="theme-btn hover-effect-btn style2 text-uppercase w-100 border-0 rounded-pill d-flex align-items-center gap-2 text-center justify-content-center">
+          Sign In
+          <span class="theme-btn-icon"></span>
+        </button>
+      </div>
+      <!-- Sign Up Link -->
+      <div class="col-lg-12 text-center">
+        <p class="mt-3 text-white">
+          Don't have an account?
+          <a href="#" id="show-signup" class="text-decoration-underline text-warning">Sign Up here</a>
+        </p>
+      </div>
+    </div>
+  </form>
+  <!-- Sign In Form Ends -->
+</div>
+</div>
+
               </div>
             </div>
             <div class="swiper-slide">
@@ -464,115 +528,155 @@
                           </svg>
                         </span>
                       </a>
-                      <a href="about.html"
-                        class="theme-btn banner-btn theme-btn-border style2 d-inline-flex text-uppercase align-items-center gap-2 justify-content-center rounded-pill hover-effect-btn">
-                       Track Your Shipment
-                        <span class="theme-btn-icon">
-                          <svg class="su-arrow-svg-top-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                              fill="white"></path>
-                            <path
-                              d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                              fill="white"></path>
-                          </svg>
-                        </span>
-                      </a>
+                     
                     </div>
                   </div>
                 </div>
                 <div class="col-xxl-4 col-xl-5 col-lg-8 mx-auto">
-                  <div class="Boren Import-contact-form rounded-20 me-0 banner-image">
-                    <form action="#">
-                      <div class="row g-4">
-                        <div class="col-lg-12">
-                          <div class="input-group black">
-                            <input type="text" class="form-control shadow-none rounded-pill" placeholder="Your Name" >
-                            <span class="icon position-absolute top-50 translate-middle-y"><i
-                                class="fa-solid fa-user"></i></span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="input-group">
-                            <input type="email" class="form-control shadow-none rounded-pill"
-                              placeholder="Your Email" >
-                            <span class="icon position-absolute top-50 translate-middle-y"><i
-                                class="fa-solid fa-envelope"></i></span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="input-group">
-                            <input type="text" class="form-control shadow-none rounded-pill" placeholder="Phone No:" >
-                            <span class="icon position-absolute top-50 translate-middle-y"><i
-                                class="fa-solid fa-phone"></i></span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="input-group">
-                            <select class="form-select white shadow-none rounded-pill">
-                              <option value="" selected disabled>Freight Type</option>
-                              <option value="general">General Cargo</option>
-                              <option value="refrigerated">Refrigerated Goods</option>
-                              <option value="hazardous">Hazardous Materials</option>
-                              <option value="liquid">Liquid Transport</option>
-                              <option value="bulk">Bulk Freight</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="input-group">
-                            <select class="form-select white shadow-none rounded-pill">
-                              <option value="" selected disabled>Load</option>
-                              <option value="full">Full Truckload (FTL)</option>
-                              <option value="partial">Partial Truckload (PTL)</option>
-                              <option value="ltl">Less Than Truckload (LTL)</option>
-                              <option value="container">Container Load</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="input-group">
-                            <label class="form-label text-white">Distance (Miles)</label>
-                            <div class="slider-wrapper">
-                              <output class="slider-tooltip"></output>
-                              <input class="slider" max="10000" min="100" type="range" value="8000">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="total-price pt-3 d-flex align-items-center justify-content-between gap-4">
-                            <div class="switch-toggle">
-                              <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                              </label>
-                            </div>
-                            <div class="price">
-                              <p><span class="text-white">Tottal:</span>$7000.00</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-12">
-                          <button type="submit"
-                            class="theme-btn hover-effect-btn style2 text-uppercase w-100 border-0 rounded-pill d-flex align-items-center gap-2 text-center justify-content-center">
-                            Submit Request
-                            <span class="theme-btn-icon">
-                              <svg class="su-arrow-svg-top-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                                  fill="white"></path>
-                                <path
-                                  d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                                  fill="white"></path>
-                              </svg>
-                            </span>
-                          </button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                 <div class="Boren Import-contact-form rounded-20 me-0 banner-image form-toggle-anim" id="form-toggle-anim">
+  <!-- Sign Up Form Starts -->
+  <form action="#" id="signup-form" class="form-toggle-form active" autocomplete="off">
+    <div class="row g-4">
+      <!-- Full Name -->
+      <div class="col-lg-12">
+        <div class="input-group black">
+          <input type="text" class="form-control shadow-none rounded-pill" placeholder="Full Name" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-user"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Email -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="email" class="form-control shadow-none rounded-pill" placeholder="Email Address" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Phone Number -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="tel" class="form-control shadow-none rounded-pill" placeholder="Phone Number" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-phone"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Company Name (Optional) -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control shadow-none rounded-pill" placeholder="Company Name (Optional)">
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-building"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Address -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control shadow-none rounded-pill" placeholder="Shipping Address" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-location-dot"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Password -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="password" class="form-control shadow-none rounded-pill" placeholder="Password" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Confirm Password -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="password" class="form-control shadow-none rounded-pill" placeholder="Confirm Password" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Submit Button -->
+      <div class="col-lg-12">
+        <button type="submit"
+          class="theme-btn hover-effect-btn style2 text-uppercase w-100 border-0 rounded-pill d-flex align-items-center gap-2 text-center justify-content-center">
+          Sign Up
+          <span class="theme-btn-icon"></span>
+        </button>
+      </div>
+      <!-- Sign In Link -->
+      <div class="col-lg-12 text-center">
+        <p class="mt-3 text-white">
+          Already have an account?
+          <a href="#" id="show-signin" class="text-decoration-underline text-warning">Sign in here</a>
+        </p>
+      </div>
+    </div>
+  </form>
+  <!-- Sign Up Form Ends -->
+
+  <!-- Sign In Form Starts -->
+  <form action="#" id="signin-form" class="form-toggle-form" autocomplete="off">
+    <div class="row g-4">
+      <!-- Full Name -->
+      <div class="col-lg-12">
+        <div class="input-group black">
+          <input type="text" class="form-control shadow-none rounded-pill" placeholder="Full Name" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-user"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Email -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="email" class="form-control shadow-none rounded-pill" placeholder="Email Address" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Phone Number -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="tel" class="form-control shadow-none rounded-pill" placeholder="Phone Number" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-phone"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Password -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="password" class="form-control shadow-none rounded-pill" placeholder="Password" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Submit Button -->
+      <div class="col-lg-12">
+        <button type="submit"
+          class="theme-btn hover-effect-btn style2 text-uppercase w-100 border-0 rounded-pill d-flex align-items-center gap-2 text-center justify-content-center">
+          Sign In
+          <span class="theme-btn-icon"></span>
+        </button>
+      </div>
+      <!-- Sign Up Link -->
+      <div class="col-lg-12 text-center">
+        <p class="mt-3 text-white">
+          Don't have an account?
+          <a href="#" id="show-signup" class="text-decoration-underline text-warning">Sign Up here</a>
+        </p>
+      </div>
+    </div>
+  </form>
+  <!-- Sign In Form Ends -->
+</div>
                 </div>
               </div>
             </div>
@@ -612,115 +716,155 @@
                           </svg>
                         </span>
                       </a>
-                      <a href="about.html"
-                        class="theme-btn banner-btn theme-btn-border style2 d-inline-flex text-uppercase align-items-center gap-2 justify-content-center rounded-pill hover-effect-btn">
-                        EXPLORE MORE
-                        <span class="theme-btn-icon">
-                          <svg class="su-arrow-svg-top-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                              fill="white"></path>
-                            <path
-                              d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                              fill="white"></path>
-                          </svg>
-                        </span>
-                      </a>
+                    
                     </div>
                   </div>
                 </div>
                 <div class="col-xxl-4 col-xl-5 col-lg-8 mx-auto">
-                  <div class="Boren Import-contact-form rounded-20 me-0 banner-image">
-                    <form action="#">
-                      <div class="row g-4">
-                        <div class="col-lg-12">
-                          <div class="input-group black">
-                            <input type="text" class="form-control shadow-none rounded-pill" placeholder="Your Name" >
-                            <span class="icon position-absolute top-50 translate-middle-y"><i
-                                class="fa-solid fa-user"></i></span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="input-group">
-                            <input type="email" class="form-control shadow-none rounded-pill"
-                              placeholder="Your Email" >
-                            <span class="icon position-absolute top-50 translate-middle-y"><i
-                                class="fa-solid fa-envelope"></i></span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="input-group">
-                            <input type="text" class="form-control shadow-none rounded-pill" placeholder="Phone No:" >
-                            <span class="icon position-absolute top-50 translate-middle-y"><i
-                                class="fa-solid fa-phone"></i></span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="input-group">
-                            <select class="form-select white shadow-none rounded-pill">
-                              <option value="" selected disabled>Freight Type</option>
-                              <option value="general">General Cargo</option>
-                              <option value="refrigerated">Refrigerated Goods</option>
-                              <option value="hazardous">Hazardous Materials</option>
-                              <option value="liquid">Liquid Transport</option>
-                              <option value="bulk">Bulk Freight</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="input-group">
-                            <select class="form-select white shadow-none rounded-pill">
-                              <option value="" selected disabled>Load</option>
-                              <option value="full">Full Truckload (FTL)</option>
-                              <option value="partial">Partial Truckload (PTL)</option>
-                              <option value="ltl">Less Than Truckload (LTL)</option>
-                              <option value="container">Container Load</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="input-group">
-                            <label class="form-label text-white">Distance (Miles)</label>
-                            <div class="slider-wrapper">
-                              <output class="slider-tooltip"></output>
-                              <input class="slider" max="10000" min="100" type="range" value="8000">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="total-price pt-3 d-flex align-items-center justify-content-between gap-4">
-                            <div class="switch-toggle">
-                              <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                              </label>
-                            </div>
-                            <div class="price">
-                              <p><span class="text-white">Tottal:</span>$7000.00</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-12">
-                          <button type="submit"
-                            class="theme-btn hover-effect-btn style2 text-uppercase w-100 border-0 rounded-pill d-flex align-items-center gap-2 text-center justify-content-center">
-                            Submit Request
-                            <span class="theme-btn-icon">
-                              <svg class="su-arrow-svg-top-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                                  fill="white"></path>
-                                <path
-                                  d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                                  fill="white"></path>
-                              </svg>
-                            </span>
-                          </button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                  <div class="Boren Import-contact-form rounded-20 me-0 banner-image form-toggle-anim" id="form-toggle-anim">
+  <!-- Sign Up Form Starts -->
+  <form action="#" id="signup-form" class="form-toggle-form active" autocomplete="off">
+    <div class="row g-4">
+      <!-- Full Name -->
+      <div class="col-lg-12">
+        <div class="input-group black">
+          <input type="text" class="form-control shadow-none rounded-pill" placeholder="Full Name" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-user"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Email -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="email" class="form-control shadow-none rounded-pill" placeholder="Email Address" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Phone Number -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="tel" class="form-control shadow-none rounded-pill" placeholder="Phone Number" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-phone"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Company Name (Optional) -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control shadow-none rounded-pill" placeholder="Company Name (Optional)">
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-building"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Address -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control shadow-none rounded-pill" placeholder="Shipping Address" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-location-dot"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Password -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="password" class="form-control shadow-none rounded-pill" placeholder="Password" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Confirm Password -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="password" class="form-control shadow-none rounded-pill" placeholder="Confirm Password" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Submit Button -->
+      <div class="col-lg-12">
+        <button type="submit"
+          class="theme-btn hover-effect-btn style2 text-uppercase w-100 border-0 rounded-pill d-flex align-items-center gap-2 text-center justify-content-center">
+          Sign Up
+          <span class="theme-btn-icon"></span>
+        </button>
+      </div>
+      <!-- Sign In Link -->
+      <div class="col-lg-12 text-center">
+        <p class="mt-3 text-white">
+          Already have an account?
+          <a href="#" id="show-signin" class="text-decoration-underline text-warning">Sign in here</a>
+        </p>
+      </div>
+    </div>
+  </form>
+  <!-- Sign Up Form Ends -->
+
+  <!-- Sign In Form Starts -->
+  <form action="#" id="signin-form" class="form-toggle-form" autocomplete="off">
+    <div class="row g-4">
+      <!-- Full Name -->
+      <div class="col-lg-12">
+        <div class="input-group black">
+          <input type="text" class="form-control shadow-none rounded-pill" placeholder="Full Name" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-user"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Email -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="email" class="form-control shadow-none rounded-pill" placeholder="Email Address" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Phone Number -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="tel" class="form-control shadow-none rounded-pill" placeholder="Phone Number" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-phone"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Password -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="password" class="form-control shadow-none rounded-pill" placeholder="Password" required>
+          <span class="icon position-absolute top-50 translate-middle-y">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Submit Button -->
+      <div class="col-lg-12">
+        <button type="submit"
+          class="theme-btn hover-effect-btn style2 text-uppercase w-100 border-0 rounded-pill d-flex align-items-center gap-2 text-center justify-content-center">
+          Sign In
+          <span class="theme-btn-icon"></span>
+        </button>
+      </div>
+      <!-- Sign Up Link -->
+      <div class="col-lg-12 text-center">
+        <p class="mt-3 text-white">
+          Don't have an account?
+          <a href="#" id="show-signup" class="text-decoration-underline text-warning">Sign Up here</a>
+        </p>
+      </div>
+    </div>
+  </form>
+  <!-- Sign In Form Ends -->
+</div>
                 </div>
               </div>
             </div>
@@ -875,11 +1019,9 @@
                 </div>
                 <div class="text pt-30">
                   <h4 class="title heading-four mb-3">
-                    <a href="service-details.html">Global Freight Services</a>
+                    <a href="service-details.html">Air & Sea Shipping</a>
                   </h4>
-                  <p>Seamlessly connect with market worldwide.
-                    Our global freight solution provieds fast, secure and efficient transport of your goods accross continents, backed by trusted network of partners.
-                  </p>
+                  <p>Expand your reach effortlessly with our reliable air and sea freight solutions. Whether you're shipping across borders or oceans, we ensure fast, secure, and cost-effective delivery through a global network of trusted partners. </p>
                   <a href="service-details.html"
                     class="theme-btn mt-4 rounded-pill d-inline-flex align-items-center">See
                     More<i class="fas fa-chevron-right"></i></a>
@@ -898,11 +1040,9 @@
                 </div>
                 <div class="text pt-30">
                   <h4 class="title heading-four mb-3">
-                    <a href="service-details.html">Ocean Freight Services</a>
+                    <a href="service-details.html">Import &Export</a>
                   </h4>
-                  <p>
-                    Reliable and cost-effective sea shipping tailored to your cargo need. From full container loads to less-than-container shipments, we ensure your goods sail smoothly to their destinations. 
-                  </p>
+                  <p>Simplify your international trade operations with our tailored import and export services. From full container loads (FCL) to less-than-container loads (LCL), we offer flexible sea freight options designed to meet your timeline and budget. </p>
                   <a href="service-details.html"
                     class="theme-btn mt-4 rounded-pill d-inline-flex align-items-center">See
                     More<i class="fas fa-chevron-right"></i></a>
@@ -921,9 +1061,10 @@
                 </div>
                 <div class="text pt-30">
                   <h4 class="title heading-four mb-3">
-                    <a href="service-details.html">Land Freight Services</a>
+                    <a href="service-details.html">Custom Brokerage</a>
                   </h4>
-                  <p>Comprehensive road and rail transportation services for domestic and cross border deliveries.  We guarantee timely and safe land freight solutions, no matter the distance.</p>
+                  <p>Expert Clearance, Smooth Deliveries
+Navigate customs regulations with ease. Our experienced brokers handle all documentation and clearance processes to ensure your goods move swiftly through borders—saving you time, reducing risks, and ensuring compliance every step of the way.</p>
                   <a href="service-details.html"
                     class="theme-btn mt-4 rounded-pill d-inline-flex align-items-center">See
                     More<i class="fas fa-chevron-right"></i></a>
@@ -942,7 +1083,7 @@
                 </div>
                 <div class="text">
                   <span class="heading-two text-white d-flex align-items-center"><span class="odometer"
-                      data-count="1"></span>k</span>
+                      data-count="4"></span>k</span>
                   <p class="text-white">Sucessful Transportation</p>
                 </div>
               </div>
@@ -963,7 +1104,7 @@
                 </div>
                 <div class="text">
                   <span class="heading-two text-white d-flex align-items-center"><span class="odometer"
-                      data-count="1"></span>k</span>
+                      data-count="9"></span>k</span>
                   <p class="text-white bold">Staisfied Customers</p>
                 </div>
               </div>
@@ -1126,7 +1267,7 @@
                         <i class="fa-regular fa-star"></i>
                       </div>
                       <h6 class="name heading-six">Sarah Afnous</h6>
-                      <p class="p2">Manager, Ajah Tool house/p>
+                      <p class="p2">Manager, Ajah Tool house</p>
                     </div>
                   </div>
                   <p>I was initially hesitant about switching logistics providers, but Boren Import's customer support team
@@ -1135,30 +1276,7 @@
                   </p>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="slider-item rounded-20 position-relative">
-                  <div class="author d-flex align-items-end position-absolute">
-                    <div class="img overflow-hidden rounded-20">
-                  
-                    </div>
-                    <div class="text">
-                      <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                      <h6 class="name heading-six">Andy Dufren</h6>
-                      <p class="p2">UI/UX Designer</p>
-                    </div>
-                  </div>
-                  <p>I was initially hesitant about switching logistics providers, but Boren Import's customer support team
-                    made
-                    the transition seamless. They were incredibly helpful and always available to answer my questions."
-                  </p>
-                </div>
-              </div>
+            
               <div class="swiper-slide">
                 <div class="slider-item rounded-20 position-relative">
                   <div class="author d-flex align-items-end position-absolute">
@@ -1174,7 +1292,7 @@
                         <i class="fa-regular fa-star"></i>
                       </div>
                       <h6 class="name heading-six">Jackson Jhon</h6>
-                      <p class="p2">UI/UX Designer</p>
+                      <p class="p2">luxware, Manager</p>
                     </div>
                   </div>
                   <p>I was initially hesitant about switching logistics providers, but Boren Import's customer support team
@@ -1408,7 +1526,9 @@
                 </div>
                 <div class="text">
                   <h3 class="heading-three info-title text-white mb-2">Address</h3>
-                  <p>281 Oron Road
+                  <p>
+                    2nd floor Quenthall Pharmacy
+                   No. 253 Oron Road
 Uyo, Akwa Ibom State, Nigeria
 </p>
                 </div>
@@ -1422,7 +1542,7 @@ Uyo, Akwa Ibom State, Nigeria
                 <div class="text">
                   <h3 class="heading-three info-title text-white mb-2">Contact</h3>
                   <p><a href="borenimportsintl@gmail.com">Email: borenimportsintl@gmail.com</a></p>
-                  <p><a href="tel:07015755785">Phone: 07015755785</a></p>
+                  <p><a href="tel:07084645549">Phone: 07084645549</a></p>
                 </div>
               </div>
             </div>
@@ -1447,7 +1567,9 @@ Uyo, Akwa Ibom State, Nigeria
             <div class="col-xxl-3 col-xl-3 col-lg-4 col-sm-6">
               <div class="footer-widget">
                 <div class="logo pb-4">
-                  <h1>Boren Import</h1>
+                                    <img src="assets/img/logo/logo.jpg" width="100" alt="logo">
+
+
                 </div>
                 <p>
                   Our dedication lies in embracing challeng es and pioneering
@@ -1478,31 +1600,38 @@ Uyo, Akwa Ibom State, Nigeria
                     <div class="icon">
                     
                     </div>
-                    <a href="services.html">Air Freight</a>
+                    <a href="services.html">Air & Sea Shipping</a>
                   </li>
                   <li>
                     <div class="icon">
                     
                     </div>
-                    <a href="services.html">Ocean Freight</a>
+                    <a href="services.html">Import & Export Propshipping</a>
                   </li>
                   <li>
                     <div class="icon">
                     
                     </div>
-                    <a href="services.html">Rail Freight</a>
+                    <a href="services.html">Custom Brokerage</a>
                   </li>
                   <li>
                     <div class="icon">
                     
                     </div>
-                    <a href="services.html">Warehousing</a>
+                    <a href="services.html">Fx Payment</a>
                   </li>
                   <li>
                     <div class="icon">
                     
                     </div>
-                    <a href="services.html">Land Freight</a>
+                    <a href="services.html">Goods Consolidation</a>
+                  </li>
+
+                    <li>
+                    <div class="icon">
+                    
+                    </div>
+                    <a href="services.html">Procurement of Goods</a>
                   </li>
                 </ul>
               </div>
@@ -1575,13 +1704,15 @@ Uyo, Akwa Ibom State, Nigeria
               <div class="footer-social">
                 <ul class="list-unstyled d-flex justify-content-center justify-content-md-end flex-wrap gap-2">
                   <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
-                      href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      href="https://r.search.yahoo.com/_ylt=AwrEqFuIgTVoCAIA5q9XNyoA;_ylu=Y29sbwNiZjEEcG9zAzQEdnRpZAMEc2VjA3Ny/RV=2/RE=1749546632/RO=10/RU=https%3a%2f%2fwww.facebook.com%2fborenimports%2f/RK=2/RS=nD8Ihgr7HfV3H9eXucCa0FXjw.0-"><i class="fab fa-facebook-f"></i></a></li>
                   <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
-                      href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                      href="https://r.search.yahoo.com/_ylt=AwrEqFuIgTVoCAIA6K9XNyoA;_ylu=Y29sbwNiZjEEcG9zAzYEdnRpZAMEc2VjA3Ny/RV=2/RE=1749546632/RO=10/RU=https%3a%2f%2fwww.tiktok.com%2f%40boren_imports/RK=2/RS=pbKwFCSjrCKXruLuAGJMo6MIwyc-"><i class="fa-brands fa-tiktok"></i></a></li>
                   <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
                       href="#"><i class="fab fab fa-whatsapp"></i></a></li>
                   <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
-                      href="#"><i class="fab fab fa-instagram"></i></a></li>
+                      href="https://r.search.yahoo.com/_ylt=AwrEqFuIgTVoCAIA5a9XNyoA;_ylu=Y29sbwNiZjEEcG9zAzMEdnRpZAMEc2VjA3Ny/RV=2/RE=1749546632/RO=10/RU=https%3a%2f%2fwww.instagram.com%2fborenimports%2f/RK=2/RS=_wFpOgy_egWei_qQGlMyGC0quJI-"><i class="fab fab fa-instagram"></i></a></li>
+                        <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
+                      href="https://r.search.yahoo.com/_ylt=AwrEqFuIgTVoCAIA5K9XNyoA;_ylu=Y29sbwNiZjEEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1749546632/RO=10/RU=https%3a%2f%2fwww.linkedin.com%2fcompany%2fboren-imports-int-l-ltd/RK=2/RS=Gcu44f0fiv8PjffqAzSlcw5ziW0-"><i class="fab fab fa-linkedin"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -1593,6 +1724,8 @@ Uyo, Akwa Ibom State, Nigeria
   <!-- Footer section end -->
 
   <!-- JS start here -->
+   <script src="assets/js/shipment-track.js"></script>
+   <script src="assets/js/script-form.js"></script>
   <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/gsap.js"></script>

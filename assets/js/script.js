@@ -6,7 +6,7 @@
     $(".fullpage_loader").fadeOut("slow", function () {
       $(this).remove(1000);
     });
-  });
+  }); 
 
   // Offcanvas menu js
   $(".offcanvas-btn").on('click', function () {

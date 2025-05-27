@@ -29,7 +29,7 @@
 <body>
 
 
-  <!-- Header section start -->
+    <!-- Header section start -->
   <header class="ep-header-section style2" id="sticky-header">
     <nav class="navbar p-0 navbar-expand-xl d-none d-xl-flex">
       <div class="container-fluid">
@@ -38,13 +38,13 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand p-0" href="index.html">
-          <h1 class="text-white">Boren Import</h1>
-          <!-- <img src="assets/img/logo/logo3.svg" alt="logo"> -->
+          <!-- <img src="assets/img/logo/logo.jpg" width="100" alt="logo"> -->
+           <h2  class="text-white"      >Boren Imports</h2>
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="index.html">
+              <a class="nav-link active" aria-current="page" href="index.html">
                 Home
               </a>
             
@@ -60,7 +60,7 @@
             </li>
           
             <li class="nav-item">
-              <a class="nav-link active" href="contact.html"> Contact </a>
+              <a class="nav-link" href="contact.html"> Contact </a>
             </li>
           </ul>
           <div class="header-action d-flex justify-content-end align-items-center">
@@ -79,21 +79,41 @@
                 </button>
               </li>
             </ul>
-            <a href="contact.html"
-              class="theme-btn style2 d-inline-flex align-items-center gap-2 justify-content-center rounded-pill hover-effect-btn">
-              Track your Shipment
-              <span class="theme-btn-icon">
-                <svg class="su-arrow-svg-top-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                    fill="white"></path>
-                  <path
-                    d="M10 1V8C10 8.29167 9.90625 8.53125 9.71875 8.71875C9.53125 8.90625 9.29167 9 9 9C8.70833 9 8.46875 8.90625 8.28125 8.71875C8.09375 8.53125 8 8.29167 8 8V3.40625L1.71875 9.71875C1.51042 9.90625 1.27083 10 1 10C0.729167 10 0.489583 9.90625 0.28125 9.71875C0.09375 9.51042 0 9.27083 0 9C0 8.72917 0.09375 8.48958 0.28125 8.28125L6.59375 2H2C1.70833 2 1.46875 1.90625 1.28125 1.71875C1.09375 1.53125 1 1.29167 1 1C1 0.708333 1.09375 0.46875 1.28125 0.28125C1.46875 0.09375 1.70833 0 2 0H9C9.29167 0 9.53125 0.09375 9.71875 0.28125C9.90625 0.46875 10 0.708333 10 1Z"
-                    fill="white"></path>
-                </svg>
-              </span>
-            </a>
+        
+
+
+            <!-- shipment tracking modal start -->
+<!-- Track your Shipment Button -->
+<a href="#" 
+   id="track-shipment-btn"
+   class="theme-btn style2 d-inline-flex align-items-center gap-2 justify-content-center rounded-pill hover-effect-btn">
+  Track your Shipment
+  <span class="theme-btn-icon">
+    <!-- SVG icon, unchanged -->
+    <svg class="su-arrow-svg-top-right" width="10" height="10" viewBox="0 0 10 10" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 1V8C10 8.29167 ... (SVG omitted for brevity)" fill="white"></path>
+      <path d="M10 1V8C10 8.29167 ... (SVG omitted for brevity)" fill="white"></path>
+    </svg>
+  </span>
+</a>
+
+<!-- Modal Markup -->
+<div class="modal-backdrop" id="track-modal-backdrop"></div>
+<div class="track-modal" id="track-modal" tabindex="-1">
+  <div class="track-modal-content">
+    <button class="close-modal" id="close-modal" aria-label="Close">&times;</button>
+    <h5 class="modal-title">Track Your Shipment</h5>
+    <form id="track-form" autocomplete="off">
+      <div class="mb-3">
+        <label for="tracking-number" class="form-label">Enter Tracking Number:</label>
+        <input type="text" id="tracking-number" class="form-control rounded-pill" required autofocus>
+      </div>
+      <button type="submit" class="theme-btn style2 rounded-pill w-100">Track</button>
+    </form>
+  </div>
+</div>
+            <!-- shipment tracking modal ends  -->
           </div>
         </div>
       </div>
@@ -123,7 +143,9 @@
       <div class="header-info d-flex align-items-center justify-content-between gap-4">
         <div class="logo">
           <a href="index.html">
-           Boren imports
+                   <img src="assets/img/logo/logo.jpg" width="100" alt="logo">
+
+           
           </a>
         </div>
         <button class="offcasvas-close bg-transparent border-0 text-white">
@@ -192,10 +214,9 @@
           <div class="d-flex justify-content-between align-items-center">
             <div class="">
               <a href="index.html">
-                  <a href="boren">
-                    Boren Imports
-                  </a>
-                <!-- <img src="assets/img/logo/Logo.svg" alt="logo" width="160"> -->
+                                   <img src="assets/img/logo/logo.jpg" width="100" alt="logo">
+
+
               </a>
             </div>
             <div class="bars">
@@ -212,7 +233,9 @@
               fill="none">
               <path d="M0 0H359L315 60V160H227.056H0V0Z" fill="currentColor" />
             </svg>
-           <h1>boren import</h1>
+                             <img src="assets/img/logo/logo.jpg" width="100" alt="logo">
+
+
           </a>
         </div>
         <div class="close-mobile-menu"><i class="fas fa-times"></i></div>
@@ -304,7 +327,9 @@
                 </div>
                 <div class="text">
                   <h4 class="heading-four mb-1">Our Address</h4>
-                  <p>281 Oron Road, Uyo, Nigeria</p>
+                  <p> 2nd floor Quenthall Pharmacy
+                   No. 253 Oron Road
+Uyo, Akwa Ibom State, Nigeria</p>
                 </div>
               </div>
             </div>
@@ -315,7 +340,7 @@
                 </div>
                 <div class="text">
                   <h4 class="heading-four mb-1">Contact Number</h4>
-                  <p>Phone: <a href="tel:07015755785">07015755785</a></p>
+                  <p>Phone: <a href="tel:07084645549">07084645549</a></p>
                   <p>Email: <a href="mailto:borenimportsintl@gmail.com">borenimportsintl@gmail.com</a></p>
                 </div>
               </div>
@@ -375,16 +400,19 @@
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <div class="input-group">
-                        <select name="type" class="form-select primary shadow-none rounded-pill">
-                          <option value="" selected disabled>Freight Type</option>
-                          <option value="General Cargo">General Cargo</option>
-                          <option value="Refrigerated Goods">Refrigerated Goods</option>
-                          <option value="Hazardous Materials">Hazardous Materials</option>
-                          <option value="Liquid Transport">Liquid Transport</option>
-                          <option value="Bulk Freight">Bulk Freight</option>
-                        </select>
-                      </div>
+                     <div class="input-group">
+  <select name="type" class="form-select primary shadow-none rounded-pill">
+   
+    <!-- Services -->
+    <option value="Air & Sea Shipping">Air & Sea Shipping</option>
+    <option value="Import & Export Dropshipping">Import & Export Dropshipping</option>
+    <option value="Custom Brokerage">Custom Brokerage</option>
+    <option value="FX Payment">FX Payment</option>
+    <option value="Goods Consolidation">Goods Consolidation</option>
+    <option value="Procurement of Goods">Procurement of Goods</option>
+  </select>
+</div>
+
                     </div>
                     <div class="col-lg-6">
                       <div class="input-group">
@@ -471,7 +499,9 @@
                 </div>
                 <div class="text">
                   <h3 class="heading-three info-title text-white mb-2">Address</h3>
-                  <p>281 Oron Road
+                  <p>
+                    2nd floor Quenthall Pharmacy
+                   No. 253 Oron Road
 Uyo, Akwa Ibom State, Nigeria
 </p>
                 </div>
@@ -485,7 +515,7 @@ Uyo, Akwa Ibom State, Nigeria
                 <div class="text">
                   <h3 class="heading-three info-title text-white mb-2">Contact</h3>
                   <p><a href="borenimportsintl@gmail.com">Email: borenimportsintl@gmail.com</a></p>
-                  <p><a href="tel:07015755785">Phone: 07015755785</a></p>
+                  <p><a href="tel:07084645549">Phone: 07084645549</a></p>
                 </div>
               </div>
             </div>
@@ -510,7 +540,9 @@ Uyo, Akwa Ibom State, Nigeria
             <div class="col-xxl-3 col-xl-3 col-lg-4 col-sm-6">
               <div class="footer-widget">
                 <div class="logo pb-4">
-                  <h1>Boren Import</h1>
+                                    <img src="assets/img/logo/logo.jpg" width="100" alt="logo">
+
+
                 </div>
                 <p>
                   Our dedication lies in embracing challeng es and pioneering
@@ -541,31 +573,38 @@ Uyo, Akwa Ibom State, Nigeria
                     <div class="icon">
                     
                     </div>
-                    <a href="services.html">Air Freight</a>
+                    <a href="services.html">Air & Sea Shipping</a>
                   </li>
                   <li>
                     <div class="icon">
                     
                     </div>
-                    <a href="services.html">Ocean Freight</a>
+                    <a href="services.html">Import & Export Propshipping</a>
                   </li>
                   <li>
                     <div class="icon">
                     
                     </div>
-                    <a href="services.html">Rail Freight</a>
+                    <a href="services.html">Custom Brokerage</a>
                   </li>
                   <li>
                     <div class="icon">
                     
                     </div>
-                    <a href="services.html">Warehousing</a>
+                    <a href="services.html">Fx Payment</a>
                   </li>
                   <li>
                     <div class="icon">
                     
                     </div>
-                    <a href="services.html">Land Freight</a>
+                    <a href="services.html">Goods Consolidation</a>
+                  </li>
+
+                    <li>
+                    <div class="icon">
+                    
+                    </div>
+                    <a href="services.html">Procurement of Goods</a>
                   </li>
                 </ul>
               </div>
@@ -638,13 +677,15 @@ Uyo, Akwa Ibom State, Nigeria
               <div class="footer-social">
                 <ul class="list-unstyled d-flex justify-content-center justify-content-md-end flex-wrap gap-2">
                   <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
-                      href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      href="https://r.search.yahoo.com/_ylt=AwrEqFuIgTVoCAIA5q9XNyoA;_ylu=Y29sbwNiZjEEcG9zAzQEdnRpZAMEc2VjA3Ny/RV=2/RE=1749546632/RO=10/RU=https%3a%2f%2fwww.facebook.com%2fborenimports%2f/RK=2/RS=nD8Ihgr7HfV3H9eXucCa0FXjw.0-"><i class="fab fa-facebook-f"></i></a></li>
                   <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
-                      href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                      href="https://r.search.yahoo.com/_ylt=AwrEqFuIgTVoCAIA6K9XNyoA;_ylu=Y29sbwNiZjEEcG9zAzYEdnRpZAMEc2VjA3Ny/RV=2/RE=1749546632/RO=10/RU=https%3a%2f%2fwww.tiktok.com%2f%40boren_imports/RK=2/RS=pbKwFCSjrCKXruLuAGJMo6MIwyc-"><i class="fa-brands fa-tiktok"></i></a></li>
                   <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
                       href="#"><i class="fab fab fa-whatsapp"></i></a></li>
                   <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
-                      href="#"><i class="fab fab fa-instagram"></i></a></li>
+                      href="https://r.search.yahoo.com/_ylt=AwrEqFuIgTVoCAIA5a9XNyoA;_ylu=Y29sbwNiZjEEcG9zAzMEdnRpZAMEc2VjA3Ny/RV=2/RE=1749546632/RO=10/RU=https%3a%2f%2fwww.instagram.com%2fborenimports%2f/RK=2/RS=_wFpOgy_egWei_qQGlMyGC0quJI-"><i class="fab fab fa-instagram"></i></a></li>
+                        <li><a class="d-flex align-items-center justify-content-center rounded-pill" target="_blank"
+                      href="https://r.search.yahoo.com/_ylt=AwrEqFuIgTVoCAIA5K9XNyoA;_ylu=Y29sbwNiZjEEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1749546632/RO=10/RU=https%3a%2f%2fwww.linkedin.com%2fcompany%2fboren-imports-int-l-ltd/RK=2/RS=Gcu44f0fiv8PjffqAzSlcw5ziW0-"><i class="fab fab fa-linkedin"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -656,6 +697,8 @@ Uyo, Akwa Ibom State, Nigeria
   <!-- Footer section end -->
 
   <!-- JS start here -->
+   <script src="assets/js/shipment-track.js"></script>
+   <script src="assets/js/script-form.js"></script>
   <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/gsap.js"></script>
@@ -668,6 +711,7 @@ Uyo, Akwa Ibom State, Nigeria
   <script src="assets/js/ajax-form.js"></script>
   <script src="assets/js/jquery.nice-select.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/knob.js"></script>
   <script src="assets/js/script.js"></script>
   <!-- JS end here -->
 </body>

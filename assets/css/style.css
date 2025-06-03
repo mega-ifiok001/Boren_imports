@@ -1971,6 +1971,10 @@ p {
 /*=============================
 	14. Banner CSS Start
 ===============================*/
+
+.banner-slider{
+  height:147vh!important;
+}
 .ep-banner-section .overlay {
   background-color: rgba(0, 31, 63, 0.9);
 }
